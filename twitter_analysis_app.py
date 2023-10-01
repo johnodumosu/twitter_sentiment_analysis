@@ -5,10 +5,10 @@ import pickle
 import numpy as np
 
 # Load the trained model
-model = load_model(r'C:\Users\DELL\Downloads\AI_LeadTech\MLOPS\streamlit_NLP\twitter_sentiment_analysis\model01.h5')
+model = load_model('model01.h5')
 
 # Load the saved tokenizer used during training
-with open(r'C:\Users\DELL\Downloads\AI_LeadTech\MLOPS\streamlit_NLP\twitter_sentiment_analysis\tokenizer01.pkl', 'rb') as tk:
+with open('tokenizer01.pkl', 'rb') as tk:
     tokenizer = pickle.load(tk)
 
 # Define function to preprocess user text input
